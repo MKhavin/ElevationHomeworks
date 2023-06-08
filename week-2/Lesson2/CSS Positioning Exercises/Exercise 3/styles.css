@@ -1,0 +1,37 @@
+.grey-element {
+    background-color: grey;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+#left-top-element {
+    top: -5px;
+    left: 0;
+}
+
+#right-top-element {
+    right: 0;
+    top: -5px;
+}
+
+.red-color {
+    background-color: red;
+    width: 400px;
+    height: 500px;
+    position: relative;
+    border-radius: 5%;
+    top: 10px;
+}
+
+.white-space {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    height: 80%;
+    left: 100px;
+}

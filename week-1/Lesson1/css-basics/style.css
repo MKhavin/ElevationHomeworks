@@ -1,0 +1,67 @@
+/* Tag selectors */
+div {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+
+/* div {
+  width: 50%;
+} */
+
+h1 {
+  font-family: "Helvetica";
+}
+
+ul {
+  color: red;
+}
+
+/* Class selectors */
+.nav-bar {
+  position: fixed;
+}
+
+.heading {
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.tomato {
+  color: tomato;
+}
+
+.gross-color {
+  color: #a3c010;
+}
+
+.nice-color {
+  color: #03bbbb;
+}
+
+/* Id selectors */
+#about-me {
+  font-family: sans-serif;
+}
+
+/* Pseudo elements */
+button:hover {
+  background-color: red;
+}
+
+/* Search position of child in parent element of the same tag*/
+p:nth-child(2) {
+  color: blue;
+}
+
+/* Combine selectors */
+
+/* All p elements that are direct descendants of a div are given green text */
+div > p {
+  color: green;
+}
+
+/* All p elements that within a div are given blue text */
+div p {
+  color: blue;
+}

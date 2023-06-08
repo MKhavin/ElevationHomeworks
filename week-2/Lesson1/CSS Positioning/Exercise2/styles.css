@@ -1,0 +1,29 @@
+body {
+    position: relative;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: grey;
+}
+
+#nav-menu {
+    box-sizing: border-box;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+
+#content {
+    margin-top: 60px;
+    font-size: 1rem;
+    padding: 0 15px;
+}
+
+
+

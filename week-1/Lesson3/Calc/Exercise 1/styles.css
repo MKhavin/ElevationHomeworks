@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+.container {
+    font-size: 0;
+    height: 8rem;
+}
+ 
+.container-element {
+    display: inline-block;
+    font-size: 1rem;
+    height: 100%;
+}
+
+.first-section {
+    width: calc(100% - 20px);
+}
+
+.second-section {
+    width: calc(20px);
+}
+
+.pink {
+    background-color: pink;
+}
+
+.orange {
+    background-color: rgb(229, 123,122);
+}

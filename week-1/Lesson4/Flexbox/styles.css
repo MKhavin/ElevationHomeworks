@@ -1,0 +1,41 @@
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+#content-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+.content-item {
+    flex-grow: 1;
+}
+
+.container-item h1 {
+    text-align: center;
+}
+
+.container-item {
+    padding: 10px;
+}
+
+.base-item-width {
+    flex-basis: 20%;
+}
+
+.border-line {
+    border: 5px solid black;
+}
+
+.ad{
+    font-size: 3rem;
+}

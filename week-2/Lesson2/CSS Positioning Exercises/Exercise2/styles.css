@@ -1,0 +1,59 @@
+#container {
+  width: 15%;
+  height: 100px;
+  background-color: rgb(103, 88, 221);
+  border-radius: 0.2rem;
+  position: relative;
+}
+
+#graph-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  column-gap: 5px;
+  width: 75%;
+  height: 75%;
+  margin: 5px;
+}
+
+.graph-item {
+  flex-basis: 1rem;
+  background-color: rgb(178, 190, 195);
+  position: relative;
+  bottom: 0;
+}
+
+#x-description {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  margin: 0;
+}
+
+#y-description {
+  margin: 5px;
+}
+
+#first-graph-item {
+  height: 20%;
+}
+
+#second-graph-item {
+  height: 50%;
+}
+
+#third-graph-item {
+  height: 100%;
+}
+
+#fourth-graph-item {
+  height: 60%;
+}
+
+#fifth-graph-item {
+  height: 10%;
+}
+
+#sixth-graph-item {
+  height: 45%;
+}
