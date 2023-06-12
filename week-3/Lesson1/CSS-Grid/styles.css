@@ -13,6 +13,8 @@ body {
   grid-area: fl;
   background-color: rgb(134, 60, 160);
   padding: 1rem;
+  /* overflow: scroll;
+  overflow-x: hidden; */
 }
 
 #chat-container {
@@ -22,6 +24,8 @@ body {
   align-items: start;
   row-gap: 1rem;
   padding: 2rem;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .message {
