@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+}
+
+#container {
+  display: grid;
+  grid-template: 1fr 1fr 50px / 0.5fr 1fr 1fr;
+  grid-template-areas: "fl ch ch" "fl ch ch" "fl mb mb";
+  height: 100vh;
+}
+
+#friends-container {
+  grid-area: fl;
+  background-color: rgb(134, 60, 160);
+  padding: 1rem;
+}
+
+#chat-container {
+  display: grid;
+  grid-area: ch;
+  background-color: rgb(232, 238, 239);
+  align-items: start;
+  row-gap: 1rem;
+  padding: 2rem;
+}
+
+.message {
+  display: flex;
+  font-family: "Leckerli One", cursive;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend-message {
+  background-color: rgb(180, 188, 191);
+  justify-self: start;
+}
+
+.message-time {
+    font-size: 10px;
+}
+
+.my-message {
+  background-color: rgb(0, 197, 107);
+  justify-self: end;
+}
+
+#send-message-container {
+  display: grid;
+  grid-area: mb;
+  grid-template-columns: 3fr 1fr;
+}
+
+#list-friends-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20%;
+}
+
+#list-friends-container > p {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1rem 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.send-button {
+  background-color: rgb(134, 60, 160);
+  color: white;
+}
