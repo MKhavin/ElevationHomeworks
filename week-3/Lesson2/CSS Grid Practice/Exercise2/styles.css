@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+}
+
+#container {
+  display: grid;
+  grid-template: 1fr 2fr 2fr 2fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 100vh;
+}
+
+#header {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  background-color: aqua;
+}
+
+#navigation {
+  grid-column: 1 / 2;
+  grid-row: 2 / -1;
+  background-color: blue;
+}
+
+#exercises-container {
+  grid-row: 2 / -1;
+  grid-column: 2 / -3;
+  background-color: gray;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+#plan-container {
+  display: flex;
+  grid-row: 2/ -1;
+  grid-column: -3 / -1;
+  background-color: red;
+  flex-flow: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+#to-do-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+#recent-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.exercise-item {
+  background-color: white;
+  flex-basis: 40%;
+}
+
+.plan-item {
+  background-color: white;
+  flex-basis: 50%;
+}
+
+.to-do-item {
+    background-color: black;
+    flex-basis: 20%;
+}
+
+.recent-item {
+    background-color: black;
+    flex-basis: 20%;
+}
