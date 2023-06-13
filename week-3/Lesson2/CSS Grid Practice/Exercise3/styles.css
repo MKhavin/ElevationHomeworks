@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+#container {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 2fr 2fr 2fr 2fr;
+    height: 100vh;
+}
+
+#navigation-bar {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    background-color: blue;
+}
+
+#field {
+    grid-row: 1 / -1;
+    grid-column: 2 / -3;
+    background-color: brown;
+}
+
+#game-control {
+    grid-row: 1 / 2;
+    grid-column: -3 / -1;
+    background-color: aquamarine;
+}
+
+#game-setup {
+    grid-row: 2 / -1;
+    grid-column: -3 / -1;
+    background-color: yellow;
+}
