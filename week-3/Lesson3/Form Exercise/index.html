@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Form Exercise</title>
+  </head>
+  <body>
+    <form id="sign-form">
+      <div>
+        <label for="name" class="display-block">Name</label>
+        <input type="text" id="name" name="name" class="display-block" />
+      </div>
+      <div id="birthday-salary-container">
+        <div class="container-item">
+          <label for="desired-salary" class="display-block"
+            >Desired Salary</label
+          >
+          <input type="number" id="desired-salary" name="desired-salary" class="display-block" />
+        </div>
+        <div class="container-item">
+          <label for="birthday" class="display-block">Birthday</label>
+          <input type="date" class="display-block" id="birthday"/>
+        </div>
+      </div>
+      <div>
+        <label for="phone" class="display-block">Phone</label>
+        <input type="tel" class="display-block" id="tel"/>
+      </div>
+      <button id="submit">Submit</button>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
