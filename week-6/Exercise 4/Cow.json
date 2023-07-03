@@ -1,0 +1,19 @@
+{
+  "name": "Cow",
+  "weight": {
+    "value": 1,
+    "type": "tone"
+  },
+  "nativeHabitat": {
+    "continent": ["WorldWide"],
+    "places": ["Europe", "Asia"]
+  },
+  "isDangerous": false,
+  "eatingHabits": [
+    { "food": "Grass", "percentOfEveryDayRation": 50 },
+    { "food": "Clover", "percentOfEveryDayRation": 25 },
+    { "food": "Legumes", "percentOfEveryDayRation": 25 }
+  ],
+  "meatAcceptableFor": ["Wolve", "Bear", "Human"],
+  "meatDeliciousness": 10
+}

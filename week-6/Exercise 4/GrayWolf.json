@@ -1,0 +1,19 @@
+{
+  "name": "Grey Wolf",
+  "weight": {
+    "value": 50,
+    "type": "kg"
+  },
+  "nativeHabitat": {
+    "continent": ["Europe", "Asia"],
+    "places": ["Tundra", "Forest"]
+  },
+  "isDangerous": true,
+  "eatingHabits": [
+    { "food": "beaver", "percentOfEveryDayRation": 20 },
+    { "food": "rabbit", "percentOfEveryDayRation": 70 },
+    { "food": "fish", "percentOfEveryDayRation": 10 }
+  ],
+  "meatAcceptableFor": ["Bear", "Tiger"],
+  "meatDeliciousness": 4
+}

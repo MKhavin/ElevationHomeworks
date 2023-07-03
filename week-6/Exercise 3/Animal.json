@@ -1,0 +1,15 @@
+{
+    "name": "Lion",
+    "weight": {
+        "value": 100,
+        "type": "kg"
+    },
+    "nativeHabitat": {
+        "continent": ["Africa"],
+        "places": []
+    },
+    "isDangerous": true,
+    "eatingHabits": ["Zebra", "Hyena", "Leopard"],
+    "meatAcceptableFor": ["Hyena", "Cheeta", "Human"],
+    "meatDeliciousness": 5
+}

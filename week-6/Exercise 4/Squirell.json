@@ -1,0 +1,19 @@
+{
+  "name": "Squirrel",
+  "weight": {
+    "value": 550,
+    "type": "g"
+  },
+  "nativeHabitat": {
+    "continent": ["WorldWide"],
+    "places": ["Woods", "Forest"]
+  },
+  "isDangerous": false,
+  "eatingHabits": [
+    { "food": "flowers", "percentOfEveryDayRation": 40 },
+    { "food": "weeds", "percentOfEveryDayRation": 40 },
+    { "food": "shrubs", "percentOfEveryDayRation": 20 }
+  ],
+  "meatAcceptableFor": ["birds", "foxes", "coyotes"],
+  "meatDeliciousness": 4
+}

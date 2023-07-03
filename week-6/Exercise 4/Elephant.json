@@ -1,0 +1,19 @@
+{
+  "name": "Elephant",
+  "weight": {
+    "value": 4,
+    "type": "tone"
+  },
+  "nativeHabitat": {
+    "continent": ["Africa"],
+    "places": ["central Africa", "Deserts"]
+  },
+  "isDangerous": true,
+  "eatingHabits": [
+    { "food": "Grass", "percentOfEveryDayRation": 50 },
+    { "food": "small plants", "percentOfEveryDayRation": 30 },
+    { "food": "bushes", "percentOfEveryDayRation": 20 }
+  ],
+  "meatAcceptableFor": ["Lions", "hyenas", "crocodiles"],
+  "meatDeliciousness": 7
+}
