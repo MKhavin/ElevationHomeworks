@@ -1,0 +1,1 @@
+console.log(users.find(u => u.address.suite === "Apt. 950").company.name)

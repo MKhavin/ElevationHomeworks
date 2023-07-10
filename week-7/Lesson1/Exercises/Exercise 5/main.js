@@ -1,0 +1,1 @@
+console.log(users.every(u => u.address.city === "South Christy"))
