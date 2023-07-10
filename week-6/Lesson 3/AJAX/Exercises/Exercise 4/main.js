@@ -1,47 +1,21 @@
-function parseBookData(bookData) {
-  let isbn = "...";
-  if ("industryIdentifiers" in bookData.volumeInfo) {
-    isbn = bookData.volumeInfo.industryIdentifiers[0].identifier;
+class GiphyModule {
+  constructor() {
+    this._apiKey = "hJfmcsWXwTCTaDDPSMCLu5JV5lglbNPN"
   }
 
-  let authors = "authors unknown";
-  if ("authors" in bookData.volumeInfo) {
-    authors = "";
-
-    bookData.volumeInfo.authors.forEach((author) => {
-      authors += author + ", ";
-    });
-
-    authors = authors.slice(0, -2);
-  }
-
-  return {
-    isbn,
-    authors,
-    title: bookData.volumeInfo.title
-  };
-}
-
-function renderBooks(data) {
-  const booksParent = $("#books");
-
-  if ("items" in data) {
-    data.items.forEach((bookData) => {
-      const parsedData = parseBookData(bookData)
-
-      booksParent.append(
-        `<li>${parsedData.isbn} - ${parsedData.authors} - ${parsedData.title}</li>`
-      );
-    });
+  getRandomGif(callback) {
+    $.ajax({
+      url: `https://api.giphy.com/v1/gifs/random?api_key=${this._apiKey}`,
+      method: "GET",
+      success: callback,
+      error: function (xhr, error, text) {
+        console.log("Error")
+      }
+    })
   }
 }
 
-function fetchBookByISBN(queryType, queryValue) {
-  $.get(
-    `https://www.googleapis.com/books/v1/volumes?q=${queryType}:${queryValue}`,
-    renderBooks
-  );
-}
-
-fetchBookByISBN("isbn", 9789814561778);
-fetchBookByISBN("title", "How to Win Friends and Influence People");
+const app = new GiphyModule()
+app.getRandomGif((result) => {
+  $("#gif-container").attr("src", result.data.embed_url)
+})
