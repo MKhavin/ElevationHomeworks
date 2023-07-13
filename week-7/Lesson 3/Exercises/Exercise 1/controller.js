@@ -16,13 +16,13 @@ class Controller {
         this.#model.getBooksWithRandomWordInTitle(this.#processBooksData.bind(this))
     }
 
-    #processBooksData(data, error) {
-        if (data === null) {
+    #processBooksData(booksData, error) {
+        if (booksData === null) {
             alert(error)
             return
         }
 
-        this.#view.renderBooks.call(this.#view, data)
+        this.#view.renderBooks.call(this.#view, booksData)
     }
 
     #loadBooksButtonClicked(event) {
