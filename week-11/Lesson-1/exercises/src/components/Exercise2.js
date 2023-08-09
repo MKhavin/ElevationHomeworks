@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const Exercise2 = () => {
     const [name, setName] = useState("");
