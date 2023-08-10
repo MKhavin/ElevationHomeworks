@@ -3,14 +3,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 50%;
+    /* height: 50%; */
+    gap: 1rem
   }
   
   .entity {
     font-family: cursive;
     width: 20%;
-    margin-right: 10px;
-    margin-bottom: 20px;
+    /* margin-right: 10px;
+    margin-bottom: 20px; */
     border: 1px solid rgb(186, 186, 186);
     opacity: 0.85;
     border-radius: 5px;
