@@ -1,0 +1,12 @@
+.posts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+}
+
+@media (max-width: 1100px) {
+    .posts-container {
+        grid-template-columns: 1fr;
+    }
+}
